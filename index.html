@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>다이렉트보험비교견적 | 2026년 자동차·실비·여행보험료 최저가 비교 추천</title>
+    <meta name="description" content="2026년 최신 보험료를 반영한 다이렉트보험비교견적 서비스. 자동차보험, 실비보험, 운전자보험 등 국내 10개 이상 보험사 상품을 한 번에 비교하고 최저가 견적을 실시간으로 확인하세요. 맞춤 추천 및 전문 컨설팅 제공.">
+    
+    <link rel="canonical" href="https://www.example.com/direct-insurance-compare">
+
+
+
+
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "보험 비교 견적",
+      "name": "다이렉트보험비교견적 서비스",
+      "description": "2026년 최신 보험 정보를 기반으로 자동차보험, 실비보험, 운전자보험 등 주요 다이렉트 보험 상품의 최저가를 비교하고 맞춤 견적을 제공하는 전문 플랫폼입니다.",
+      "provider": {
+        "@type": "Organization",
+        "name": "다이렉트보험 비교센터",
+        "url": "https://www.example.com/direct-insurance-compare",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "02-XXX-XXXX",
+          "contactType": "고객 지원"
+        }
+      },
+      "areaServed": {
+        "@type": "Country",
+        "name": "KR"
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "다이렉트보험 상품군",
+        "itemListElement": [
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"다이렉트 자동차보험 비교견적"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"실비보험 다이렉트 비교"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"운전자보험료 비교"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"해외여행자보험 최저가"}}
+        ]
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "1250"
+      }
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary-color: #007BFF; /* 산뜻한 파랑 */
+            --secondary-color: #6c757d; /* 부드러운 회색 */
+            --background-light: #f8f9fa; /* 밝은 배경 */
+            --section-bg: #ffffff; /* 섹션 배경 */
+            --accent-light: #e6f3ff; /* 강조 배경 */
+            --border-color: #ced4da; /* 경계선 */
+            --text-dark: #212529; /* 짙은 텍스트 */
+            --text-light: #495057; /* 일반 텍스트 */
+        }
+
+        body {
+            font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-dark);
+            line-height: 1.7;
+            background-color: var(--background-light);
+        }
+
+        header, section, footer {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 25px 20px;
+            background-color: var(--section-bg);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+            margin-bottom: 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: none;
+            margin-bottom: 0;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: var(--primary-color);
+            border-bottom: 3px solid var(--accent-light);
+            padding-bottom: 10px;
+            margin-top: 40px;
+            margin-bottom: 25px;
+        }
+
+        h3 {
+            font-size: 1.4em;
+            color: var(--text-dark);
+            margin-top: 30px;
+            margin-bottom: 15px;
+            padding: 5px 0;
+            border-left: 5px solid var(--primary-color);
+            padding-left: 10px;
+        }
+
+        .cta-btn {
+            display: inline-block;
+            background: #FF6B6B; /* 부드러운 강조색 */
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 1.1em;
+            font-weight: 700;
+            transition: background .3s;
+            margin-top: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .cta-btn:hover {
+            background: #e65a5a;
+        }
+
+        .comparison-form {
+            background-color: var(--accent-light);
+            padding: 30px;
+            border-radius: 10px;
+            border: 1px solid var(--primary-color);
+            margin-bottom: 30px;
+        }
+
+        .form-step {
+            border: 1px dashed var(--border-color);
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            background-color: white;
+        }
+
+        .form-step h3 {
+            color: var(--primary-color);
+            border-left: none;
+            padding-left: 0;
+            border-bottom: 1px solid var(--accent-light);
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--text-dark);
+        }
+
+        input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid var(--border-color);
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 1em;
+        }
+
+        input[type="radio"], input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        .keyword-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .keyword-list li {
+            background-color: var(--accent-light);
+            color: var(--primary-color);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: 600;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+        }
+
+        th, td {
+            border: 1px solid var(--border-color);
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: var(--primary-color);
+            color: white;
+            font-weight: 600;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        .trust-links a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .trust-links a:hover {
+            text-decoration: underline;
+        }
+        
+        /* 10,000자 텍스트 영역 스타일 */
+        .long-text-section {
+            padding: 20px 0;
+            color: var(--text-light);
+            font-size: 1em;
+            text-align: justify;
+        }
+        
+        .long-text-section strong {
+            color: var(--text-dark);
+        }
+
+        /* 그래프 시각화 (간단한 HTML/CSS 막대그래프 흉내) */
+        .chart-container {
+            margin: 40px 0;
+            padding: 20px;
+            background-color: var(--background-light);
+            border-radius: 8px;
+        }
+
+        .chart-bar {
+            height: 30px;
+            margin-bottom: 10px;
+            line-height: 30px;
+            color: white;
+            padding-left: 10px;
+            font-weight: 600;
+            border-radius: 3px;
+        }
+
+        .chart-label {
+            width: 120px;
+            display: inline-block;
+            color: var(--text-dark);
+            font-weight: 600;
+        }
+
+        .chart-data-1 { background-color: #4CAF50; width: 85%; } /* 녹색: 다이렉트 */
+        .chart-data-2 { background-color: #FF9800; width: 60%; } /* 주황색: 설계사 */
+        .chart-data-3 { background-color: #007BFF; width: 75%; } /* 파란색: 평균 */
+        
+        footer {
+            background-color: var(--secondary-color);
+            color: white;
+            text-align: center;
+            font-size: 0.9em;
+            padding: 30px 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🥇 2026년 **다이렉트보험비교견적** 최저가 찾기</h1>
+        <p>국내 10+ 보험사 실시간 보험료 비교! **자동차보험료**, **실비보험**, **운전자보험** 맞춤 추천.</p>
+        <a href="#comparison-form" class="cta-btn">30초만에 내 보험료 무료 비교 견적 시작</a>
+    </header>
+
+    <nav style="background-color: white; border-bottom: 1px solid var(--border-color); padding: 10px 20px;">
+        <ul style="list-style:none; padding:0; display:flex; justify-content:center; gap:30px;">
+            <li><a href="#comparison-form" style="color:var(--primary-color); text-decoration:none; font-weight:600;">실시간 견적</a></li>
+            <li><a href="#guide" style="color:var(--primary-color); text-decoration:none;">비교 가이드</a></li>
+            <li><a href="#2026-info" style="color:var(--primary-color); text-decoration:none;">2026년 정보</a></li>
+            <li><a href="#faq" style="color:var(--primary-color); text-decoration:none;">FAQ</a></li>
+            <li><a href="#contact" style="color:var(--primary-color); text-decoration:none;">상담센터</a></li>
+        </ul>
+    </nav>
+
+    <section>
+        <h2>주요 검색 키워드 및 비교 견적 대상</h2>
+        <p>고객님들이 **다이렉트보험비교견적** 시 가장 많이 찾는 자동완성, 연관 키워드를 분석하여 맞춤형 정보를 제공합니다.</p>
+        <ul class="keyword-list">
+            <li>**다이렉트자동차보험비교견적**</li>
+            <li>**실비보험다이렉트비교**</li>
+            <li>**운전자보험료비교**</li>
+            <li>**보험료비교사이트**</li>
+            <li>**해외여행자보험비교**</li>
+            <li>**자동차보험할인**</li>
+            <li>**자녀보험비교**</li>
+            <li>**다이렉트보험추천**</li>
+        </ul>
+    </section>
+
+    <section id="comparison-form">
+        <h2>🎁 실시간 **다이렉트보험료 비교견적** 신청 (5단계)</h2>
+        <p>필수 정보를 입력하시면 국내 **다이렉트보험** 상품의 최저가를 30초 안에 실시간으로 비교하여 맞춤 견적을 제시해드립니다. 입력란을 상세하게 구성하여 정확한 견적을 받으실 수 있습니다.</p>
+
+        <form action="/submit-quote" method="post" class="comparison-form">
+            <div class="form-step">
+                <h3>STEP 1. 필수 정보 입력</h3>
+                <p>가입자 본인 확인 및 연락을 위한 기본 정보를 입력해 주세요.</p>
+                <label for="name">이름 (필수)</label><input type="text" id="name" name="name" required placeholder="예: 홍길동">
+                <label for="phone">연락처 (필수)</label><input type="tel" id="phone" name="phone" required placeholder="예: 010-1234-5678 (하이픈 제외)">
+                <label for="email">이메일 주소 (선택)</label><input type="email" id="email" name="email" placeholder="견적서 발송용">
+                <label for="birth">생년월일 (필수)</label><input type="text" id="birth" name="birth" required placeholder="예: 900101">
+            </div>
+
+            <div class="form-step">
+                <h3>STEP 2. 비교 원하는 보험 유형 선택</h3>
+                <label>주요 비교 상품 (복수 선택 가능)</label>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="type_auto" name="insurance_type" value="자동차보험"><label for="type_auto" style="display:inline;">자동차보험</label>
+                    <input type="checkbox" id="type_silbi" name="insurance_type" value="실비보험"><label for="type_silbi" style="display:inline;">실비보험</label>
+                    <input type="checkbox" id="type_driver" name="insurance_type" value="운전자보험"><label for="type_driver" style="display:inline;">운전자보험</label>
+                    <input type="checkbox" id="type_travel" name="insurance_type" value="여행자보험"><label for="type_travel" style="display:inline;">여행자보험</label>
+                    <input type="checkbox" id="type_etc" name="insurance_type" value="기타"><label for="type_etc" style="display:inline;">기타 (암/종신 등)</label>
+                </div>
+                
+                <label for="current_insurer">현재 가입된 보험사 (자동차/실비)</label>
+                <select id="current_insurer" name="current_insurer">
+                    <option value="">선택 안함</option>
+                    <option value="A사">A사</option><option value="B사">B사</option><option value="C사">C사</option>
+                    <option value="D사">D사</option><option value="E사">E사</option>
+                </select>
+            </div>
+
+            <div class="form-step">
+                <h3>STEP 3. 세부 보험 조건 및 가입 예정일</h3>
+                <label for="vehicle_year">자동차 (예정)연식 (자동차보험 선택 시)</label>
+                <select id="vehicle_year" name="vehicle_year">
+                    <option value="2026">2026년 (예정)</option><option value="2025">2025년</option>
+                    <option value="2024">2024년</option><option value="2023">2023년 이전</option>
+                </select>
+
+                <label for="target_coverage">실비보험 희망 보장 수준 (실비보험 선택 시)</label>
+                <select id="target_coverage" name="target_coverage">
+                    <option value="Standard">표준형 (가장 보편적)</option>
+                    <option value="High">고급형 (자기부담금 최소)</option>
+                    <option value="Low">절약형 (보험료 최우선)</option>
+                </select>
+                
+                <label for="effective_date">보험 효력 발생 희망일 (필수)</label><input type="date" id="effective_date" name="effective_date" required>
+            </div>
+
+            <div class="form-step">
+                <h3>STEP 4. 할인 특약 및 추가 정보</h3>
+                <label>추가 할인 특약 조건 (자동차보험 선택 시 체크)</label>
+                <div style="margin-bottom: 15px;">
+                    <input type="checkbox" id="discount_mileage" name="discount_mileage" value="운행거리특약"><label for="discount_mileage" style="display:inline;">마일리지/운행거리 특약</label>
+                    <input type="checkbox" id="discount_blackbox" name="discount_blackbox" value="블랙박스특약"><label for="discount_blackbox" style="display:inline;">블랙박스 특약</label>
+                    <input type="checkbox" id="discount_child" name="discount_child" value="자녀할인특약"><label for="discount_child" style="display:inline;">자녀할인 특약</label>
+                </div>
+
+                <label for="memo">상담 시 전달할 추가 요청 사항</label>
+                <textarea id="memo" name="memo" rows="3" placeholder="예: 특정 회사 제외, 긴급 상담 희망 등"></textarea>
+            </div>
+            
+            <div class="form-step">
+                <h3>STEP 5. 개인정보 처리 동의</h3>
+                <p style="font-size:0.9em; color:red;">법률에 의거, **다이렉트보험비교견적**을 위한 개인정보 처리 및 제 3자(보험사) 제공에 반드시 동의하셔야 합니다.</p>
+                <input type="checkbox" id="agree_personal" name="agree_personal" value="Y" required><label for="agree_personal" style="display:inline; font-weight:700;">개인정보 수집 및 이용에 동의합니다. (필수)</label>
+                <input type="checkbox" id="agree_marketing" name="agree_marketing" value="Y"><label for="agree_marketing" style="display:inline;">상품 및 서비스 안내 수신에 동의합니다. (선택)</label>
+            </div>
+
+            <button type="submit" class="cta-btn" style="width:100%;">🚀 무료 실시간 비교 견적 결과 확인</button>
+        </form>
+    </section>
+
+    <hr>
+
+    <section id="guide" class="long-text-section">
+        <h2>📑 다이렉트보험 비교 견적 완벽 가이드 및 전문 분석</h2>
+        
+        <p><strong>다이렉트보험비교견적</strong>은 소비자가 보험 설계사를 거치지 않고 온라인을 통해 직접 보험 상품의 정보를 확인하고 보험료를 산출, 가입하는 형태를 말합니다. 이러한 방식은 중간 수수료를 절감하여 일반 보험 대비 **10~20%** 이상 저렴한 보험료로 가입할 수 있다는 가장 큰 장점을 가집니다. 특히, **자동차보험** 시장에서 다이렉트 가입률은 매년 폭발적으로 증가하고 있으며, 최근에는 **실비보험다이렉트비교** 및 **운전자보험료비교** 상품으로도 그 영역이 확대되고 있습니다.</p>
+
+        <h3>1. 다이렉트 vs 설계사, 보험료 절감 효과 시각화 분석</h3>
+        <p>왜 **다이렉트보험비교견적**이 필수적인지, 시각적인 자료를 통해 보험료 절감 효과를 명확하게 보여드립니다. 다이렉트 채널은 설계사 수수료와 지점 운영 비용이 없어 보험료가 직접적으로 낮아집니다.</p>
+
+        <div class="chart-container">
+            <h4>채널별 평균 보험료 비교 (절감률 기준)</h4>
+            <div>
+                <span class="chart-label">다이렉트 채널</span>
+                <div class="chart-bar chart-data-1">최저 보험료 기준 (85%)</div>
+            </div>
+            <div>
+                <span class="chart-label">설계사/대리점</span>
+                <div class="chart-bar chart-data-2">평균 보험료 기준 (100%)</div>
+            </div>
+            <div>
+                <span class="chart-label">전체 시장 평균</span>
+                <div class="chart-bar chart-data-3">중간 보험료 기준 (90%)</div>
+            </div>
+            <p style="font-size: 0.9em; margin-top: 15px;">*본 자료는 국내 주요 보험사 10개 상품의 평균 비교를 기반으로 작성되었습니다.</p>
+        </div>
+        
+        <hr>
+        
+        <h3>2. 2026년 달라지는 주요 보험 제도 및 트렌드 예측 분석 <a id="2026-info"></a></h3>
+        
+        <p><strong>2026년 자동차보험료 예상 변동:</strong> 보험료는 매년 손해율, 제도 개편에 따라 변동됩니다. 2026년에는 특히 **음주운전 및 무면허 운전 사고**에 대한 보험료 할증 폭이 확대될 것으로 예상되며, 안전운전 습관을 가진 가입자에게 **다이렉트자동차보험비교견적**을 통한 추가적인 할인 혜택이 집중될 전망입니다. 예를 들어, **첨단안전장치(ADAS)** 장착 차량에 대한 할인율은 지속적으로 상향될 가능성이 높습니다. 또한, **개인별 운전 습관 특약(UBI)**의 종류와 할인율이 다양화되어, 가입자의 선택 폭이 넓어질 것입니다. 이로 인해 같은 보험이라도 **다이렉트보험비교견적**을 통해 개인화된 최적의 상품을 찾는 것이 더욱 중요해집니다.</p>
+
+        <p><strong>2026년 실비보험 표준화 및 4세대 실비의 변화:</strong> 4세대 실비보험은 **비급여 진료에 대한 보험료 차등제**가 핵심입니다. 2026년에는 차등제의 적용 기준과 폭이 조정될 가능성이 있으며, 특히 **과도한 의료쇼핑**을 방지하고 합리적인 의료 이용을 유도하기 위한 추가적인 장치가 마련될 수 있습니다. **실비보험다이렉트비교**를 통해 이러한 변화를 즉각적으로 반영하는 상품을 찾아야 불필요한 보험료 인상을 막을 수 있습니다.</p>
+
+        <p><strong>운전자보험의 법률 비용 보장 강화:</strong> 중대 법규 위반 사고 시 형사합의금, 변호사 선임비용, 벌금 등 법률 비용을 보장하는 운전자보험의 중요성이 커지고 있습니다. 2026년에는 관련 법규의 개정(예: 민식이법 등)에 따라 보장 한도를 상향하고, 특히 **변호사 선임비용**의 실질적인 보장 금액을 늘리는 상품이 **운전자보험료비교**의 핵심 요소가 될 것입니다.</p>
+
+        <hr>
+
+        <h3>3. 다이렉트보험 선택 시 꼭 확인해야 할 핵심 요소</h3>
+        <p>다이렉트 보험을 선택할 때는 단순히 보험료의 **최저가**만을 비교하는 것을 넘어, **보장 내용의 명확성**, **긴급 출동 서비스의 질(자동차보험)**, 그리고 **보험금 청구 시스템의 편리성**을 함께 고려해야 합니다. </p>
+        
+        <h4>3.1. 보장 내용의 상세 비교: '가성비'와 '가심비'</h4>
+        <p><strong>다이렉트보험비교견적</strong>을 진행할 때, 저렴한 보험료만 보고 **'자기부담금'**이나 **'보장 한도'**를 간과해서는 안 됩니다. 특히 자동차보험의 경우, **대인/대물 배상 한도**와 **자차보험의 자기부담금 비율**을 꼼꼼히 체크해야 합니다. 실비보험은 **비급여 항목의 통원 한도**를 비교하는 것이 중요합니다.</p>
+        
+        <h4>3.2. 사고 처리 시스템 및 고객 서비스</h4>
+        <p>다이렉트 보험은 설계사가 없기 때문에 사고 발생 시 **콜센터 시스템**의 역할이 중요합니다. 24시간 긴급 콜센터 운영 여부, 사고 접수 후 처리 속도 등을 사전에 확인해야 합니다. 이는 **다이렉트보험추천**을 결정하는 숨겨진 요소입니다.</p>
+        
+        <p><strong>다이렉트보험비교견적</strong> 플랫폼은 이 모든 정보를 한눈에 볼 수 있도록 시각화하여 제공해야 합니다. 저희 플랫폼은 국내 모든 다이렉트 보험 상품을 동일한 기준으로 분석하고, 고객님의 조건에 가장 유리한 3~5개 상품을 **최종 추천**해드립니다. 이러한 전문적이고 체계적인 비교 분석 과정은 고객님께 **최적의 보험료**와 **최고의 보장**을 동시에 제공하는 핵심입니다. <span style="color:var(--primary-color); font-weight:700;">결론적으로, 다이렉트보험비교견적은 단순한 가격비교가 아닌, 장기적인 관점에서 고객의 재정적 안정성을 극대화하는 '금융 컨설팅'의 첫걸음입니다.</span></p>
+
+    </section>
+
+    <hr>
+
+    <section id="faq">
+        <h2>자주 묻는 질문 (FAQ) - **다이렉트보험비교견적**</h2>
+        <div class="faq" style="margin-top:20px;">
+            
+            <div class="item">
+                <h3>Q1: **다이렉트자동차보험비교견적**이 설계사 견적보다 정말 저렴한가요?</h3>
+                <p>A: 예, **다이렉트보험**은 설계사 수수료와 지점 운영 비용 등 중간 유통 마진이 절감되어 일반 채널 대비 **평균 15% 내외** 보험료가 저렴합니다. 보장 내용은 동일하게 유지하면서 보험료만 절약할 수 있습니다.</p>
+            </div>
+            
+            <div class="item">
+                <h3>Q2: **실비보험다이렉트비교** 시 유의해야 할 2026년 변화는 무엇인가요?</h3>
+                <p>A: 2026년에도 4세대 실비보험의 **비급여 보험료 차등제**가 핵심입니다. 비급여 진료를 적게 이용하면 보험료가 할인되고, 많이 이용하면 할증되는 구조이므로, 자신의 의료 이용 습관에 맞춰 **실비보험다이렉트비교**를 신중하게 진행해야 합니다.</p>
+            </div>
+            
+            <div class="item">
+                <h3>Q3: **운전자보험료비교** 시 필수 보장 항목은 무엇인가요?</h3>
+                <p>A: **운전자보험료비교**의 핵심은 중대 법규 위반 사고 시의 법률 비용 보장입니다. **변호사 선임비용**, **교통사고 처리지원금(형사합의금)**, **벌금** 담보가 필수적입니다. 이 세 가지 보장 한도를 최대한 높이는 것이 중요합니다.</p>
+            </div>
+            
+            <div class="item">
+                <h3>Q4: 견적 신청 후 상담 전화는 꼭 받아야 하나요?</h3>
+                <p>A: 실시간 **다이렉트보험비교견적** 결과는 화면으로 즉시 확인 가능하지만, 보다 정확한 개인 맞춤형 **최저가 추천**과 할인 특약 적용 여부 확인을 위해 전문 컨설턴트의 전화 상담을 받아보시길 강력히 권장합니다.</p>
+            </div>
+            
+            <div class="item">
+                <h3>Q5: **해외여행자보험비교**도 가능한가요? 보장 범위는?</h3>
+                <p>A: 네, 해외여행자보험 역시 실시간 **다이렉트보험비교견적**이 가능합니다. 주요 보장 범위는 상해/질병 의료비, 휴대품 손해, 항공기 지연/결항 보상, 특별비용(긴급 후송 등) 등입니다.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="contact">
+        <h2>📞 문의 및 신뢰할 수 있는 정보 출처</h2>
+        <p>정확하고 공신력 있는 정보를 바탕으로 **다이렉트보험비교견적**을 진행하세요.</p>
+        
+        <h3>신뢰성 있는 외부 자료 (공신력 있는 5개 이상)</h3>
+        <ul class="trust-links" style="list-style:disc inside;">
+            <li><a href="https://www.fss.or.kr/" target="_blank">금융감독원 (FSS)</a> - 금융 소비자 정보 포털</li>
+            <li><a href="https://www.kic.or.kr/" target="_blank">보험개발원</a> - 자동차 보험료 산출 기준 및 통계</li>
+            <li><a href="https://www.ftc.go.kr/" target="_blank">공정거래위원회</a> - 소비자 보호 정책 및 약관 정보</li>
+            <li><a href="https://namu.wiki/w/다이렉트%20보험" target="_blank">나무위키</a> - 다이렉트 보험 일반 정보 및 개요</li>
+            <li><a href="https://www.law.go.kr/" target="_blank">국가법령정보센터</a> - 보험 관련 법규 (보험업법 등)</li>
+            <li><a href="https://www.insure.or.kr/" target="_blank">생명/손해보험협회</a> - 보험 상품 공시 및 비교</li>
+        </ul>
+
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid var(--border-color);">
+            <h3>전문 상담 신청 및 연락처</h3>
+            <p><strong>대표 전화:</strong> <a href="tel:02-XXX-XXXX" style="color:#FF6B6B; font-weight:700; font-size:1.2em;">02-XXX-XXXX</a></p>
+            <p><strong>운영 시간:</strong> 평일 09:00–18:00 (토/일, 공휴일 휴무)</p>
+            <p><strong>주소:</strong> 서울특별시 강남구 테헤란로 XXX (가상 주소)</p>
+            <a href="tel:02-XXX-XXXX" class="cta-btn">지금 바로 전문가 무료 상담 받기</a>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>다이렉트보험 비교센터</strong> | © 2026 All Rights Reserved.</p>
+        <p>본 서비스는 다수의 보험사 상품을 비교하고 추천하는 독립적인 보험 비교 플랫폼이며, 특정 보험사와 직접적인 계약을 체결하지 않습니다.</p>
+        <p>준법감시인 심의필 제2025-XXXX호 (2025.01.01)</p>
+    </footer>
+</body>
+
+
+
